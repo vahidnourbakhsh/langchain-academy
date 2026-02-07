@@ -125,7 +125,7 @@ class UpdateMemory(TypedDict):
     update_type: Literal['user', 'todo', 'instructions']
 
 # Initialize the model
-model = ChatOllama(model="llama3:latest", temperature=0)
+model = ChatOllama(model="llama3.1:latest", temperature=0)
 
 ## Create the Trustcall extractors for updating the user profile and ToDo list
 profile_extractor = create_extractor(

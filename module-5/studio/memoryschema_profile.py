@@ -10,7 +10,7 @@ from langgraph.store.base import BaseStore
 import configuration
 
 # Initialize the LLM
-model = ChatOllama(model="llama3:latest", temperature=0) 
+model = ChatOllama(model="llama3.1:latest", temperature=0) 
 
 # Schema 
 class UserProfile(BaseModel):

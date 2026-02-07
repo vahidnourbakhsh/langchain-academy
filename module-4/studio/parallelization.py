@@ -12,7 +12,7 @@ from langchain_ollama import ChatOllama
 
 from langgraph.graph import StateGraph, START, END
 
-llm = ChatOllama(model="llama3:latest", temperature=0) 
+llm = ChatOllama(model="llama3.1:latest", temperature=0) 
 
 class State(TypedDict):
     question: str

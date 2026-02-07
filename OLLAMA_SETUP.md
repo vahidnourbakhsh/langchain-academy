@@ -6,16 +6,44 @@ This branch has been modified to use **Ollama** instead of OpenAI, allowing you 
 
 - ✅ **No API costs** - Run models completely free
 - ✅ **Complete privacy** - Your data never leaves your machine
-- ✅ **No API keys required** - No signup or authentication needed
+- ✅ **No API keys required** - No signup or authentication needed (except TAVILY for web search)
 - ✅ **Works offline** - No internet connection required once models are downloaded
 
 ## Prerequisites
 
 1. **Install Ollama**: Download from [https://ollama.ai](https://ollama.ai)
-2. **Pull at least one model**: 
+2. **Pull the correct model**: 
    ```bash
-   ollama pull llama3
+   ollama pull llama3.1
    ```
+
+## ⚠️ IMPORTANT: Tool Calling Support
+
+**Most notebooks in this course use tool calling (function calling), which requires specific models.**
+
+### Models that Support Tool Calling:
+- ✅ **llama3.1** (8B, 70B, or 405B) - **RECOMMENDED**
+- ✅ **llama3.2** (1B or 3B)
+- ✅ **mistral**
+- ✅ **mixtral**
+- ✅ **qwen2.5**
+
+### Models that DO NOT Support Tool Calling:
+- ❌ **llama3** - This will cause errors!
+
+### Common Error
+
+If you see this error:
+```
+ResponseError: registry.ollama.ai/library/llama3:latest does not support tools (status code: 400)
+```
+
+**Solution:** You need to use `llama3.1` instead:
+```bash
+ollama pull llama3.1
+```
+
+Then restart your notebook kernel.
 
 ## Available Models on Your System
 

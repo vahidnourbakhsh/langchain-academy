@@ -34,7 +34,7 @@ def divide(a: int, b: int) -> float:
 tools = [add, multiply, divide]
 
 # Define LLM with bound tools
-llm = ChatOllama(model="llama3:latest")
+llm = ChatOllama(model="llama3.1:latest")
 llm_with_tools = llm.bind_tools(tools)
 
 # System message

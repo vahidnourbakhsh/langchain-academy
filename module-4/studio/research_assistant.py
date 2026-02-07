@@ -13,7 +13,7 @@ from langgraph.graph import END, MessagesState, START, StateGraph
 
 ### LLM
 
-llm = ChatOllama(model="llama3:latest", temperature=0) 
+llm = ChatOllama(model="llama3.1:latest", temperature=0) 
 
 ### Schema 
 

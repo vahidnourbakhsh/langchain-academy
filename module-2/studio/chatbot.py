@@ -5,7 +5,7 @@ from langgraph.graph import StateGraph, START, END
 
 # We will use this model for both the conversation and the summarization
 from langchain_ollama import ChatOllama
-model = ChatOllama(model="llama3:latest", temperature=0) 
+model = ChatOllama(model="llama3.1:latest", temperature=0) 
 
 # State class to store messages and summary
 class State(MessagesState):
