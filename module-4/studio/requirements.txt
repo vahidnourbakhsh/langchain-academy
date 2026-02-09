@@ -1,5 +1,6 @@
 langgraph
-langgraph-prebuilt
 langchain-core
 langchain-community
 langchain-ollama
+wikipedia
+langchain-tavily
